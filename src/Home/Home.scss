@@ -1,0 +1,18 @@
+.home {
+  color: white;
+  grid-area: 1/2/1/2;
+  padding: 0 5% 100px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: scroll; /* Add the ability to scroll */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  justify-content: center;
+}
+.home::-webkit-scrollbar {
+  display: none;
+}
+
+.homeTitle {
+  margin: 0;
+}

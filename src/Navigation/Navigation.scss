@@ -1,0 +1,29 @@
+.navBar {
+  grid-area: 1/1/1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+$transitionSpeed: 0s;
+.navLinks:hover {
+  -moz-transition: all $transitionSpeed ease-in;
+  -o-transition: all $transitionSpeed ease-in;
+  -webkit-transition: all $transitionSpeed ease-in;
+  transition: all $transitionSpeed ease-in;
+  filter: invert(54%) sepia(99%) saturate(7498%) hue-rotate(256deg)
+    brightness(85%) contrast(98%);
+}
+.selected {
+  filter: invert(15%) sepia(98%) saturate(5270%) hue-rotate(264deg)
+    brightness(92%) contrast(89%);
+}

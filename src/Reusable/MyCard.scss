@@ -1,0 +1,42 @@
+.card {
+  background-color: #333333;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cardSubtitle {
+  color: rgb(130, 130, 130);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardBody {
+  background-color: #414141;
+  color: #f1eeee;
+}
+
+.cardText {
+  color: rgb(230, 230, 230);
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@mixin cardMixin {
+  background-color: #333333;
+  margin-bottom: 20px;
+  word-wrap: normal;
+}
+@media (min-width: 720px) {
+  .card {
+    @include cardMixin();
+    max-width: 800px;
+  }
+}

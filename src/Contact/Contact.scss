@@ -1,0 +1,87 @@
+$formColor: rgb(59, 59, 59);
+$accentColor: #682dd6;
+
+.formGroup {
+  width: 100%;
+}
+
+.formRow {
+  margin: 0;
+  justify-content: space-between;
+}
+
+.textBox {
+  color: white;
+  background-color: $formColor;
+  width: 100%;
+
+  outline: none;
+  border-style: hidden hidden hidden hidden;
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+@mixin formTypeStyles {
+  background-color: $formColor !important;
+  padding: 10px;
+}
+input[type="email"] {
+  @include formTypeStyles();
+}
+input[type="text"] {
+  @include formTypeStyles();
+}
+input[type="email"] {
+  @include formTypeStyles();
+}
+
+textarea {
+  @include formTypeStyles();
+  min-height: 50px;
+  max-height: 500px;
+  height: 250px;
+}
+
+.formButton {
+  color: rgb(126, 126, 126);
+}
+.resumeButton {
+  background-color: $accentColor;
+  width: 200px;
+  margin-top: 25px;
+  border: none;
+}
+.resumeButton:hover {
+  background-color: #4d15b4;
+}
+.resumeButton:focus {
+  box-shadow: none;
+}
+
+@mixin contactMixin {
+  color: white;
+  grid-area: 1/2/1/2;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow-y: scroll; /* Add the ability to scroll */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding: 0 0 0 20px;
+}
+@media (min-width: 600px) {
+  .contact {
+    @include contactMixin();
+    align-self: center;
+    width: 500px;
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    @include contactMixin();
+    padding: 20px 0 0 20px;
+  }
+}
+.contact::-webkit-scrollbar {
+  display: none;
+}
