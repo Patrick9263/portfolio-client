@@ -27,7 +27,7 @@ const Contact = () => {
     }).catch(err => {
       console.log(err);
       const msg = `${message}\r\n\r\n- ${name}\r\n- ${email}`;
-      window.open(`mailto:portfolio9263@gmail.com?subject=${subject}&body=${msg}`);
+      window.open(`mailto:contact@patricksmith.io?subject=${subject}&body=${msg}`);
     });
   };
 
