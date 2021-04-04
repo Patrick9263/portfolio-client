@@ -28,7 +28,7 @@ const Contact = () => {
       console.log(err);
       // const msg = `${message}\r\n\r\n- ${name}\r\n- ${email}`;
       const newLine = '%0D%0A'
-      const msg = message + newLine + "- " + name + newLine + "- " + email;
+      const msg = `${message}${newLine}${newLine}- ${name}${newLine}- ${email}`;
       window.open(`mailto:contact@patricksmith.io?subject=${subject}&body=${msg}`);
     });
   };
