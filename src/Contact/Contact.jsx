@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import resume from "./Resume.pdf";
 import "./Contact.scss";
 import axios from "axios";
+const os = require('os')
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -26,7 +27,9 @@ const Contact = () => {
       },
     }).catch(err => {
       console.log(err);
-      const msg = `${message}\r\n\r\n- ${name}\r\n- ${email}`;
+      // const msg = `${message}\r\n\r\n- ${name}\r\n- ${email}`;
+      const newLine = JSON.stringify(os.EOL)
+      const msg = message + newLine + '- ' + name + newLine + '- ' + email;
       window.open(`mailto:contact@patricksmith.io?subject=${subject}&body=${msg}`);
     });
   };
