@@ -24,6 +24,10 @@ const Contact = () => {
         subject,
         message,
       },
+    }).catch(err => {
+      console.log(err);
+      const msg = `${message}\n\n- ${name}\n- ${email}`;
+      window.open(`mailto:portfolio9263@gmail.com?subject=${subject}&body=${msg}`);
     });
   };
 
