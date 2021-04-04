@@ -17,7 +17,7 @@ const Contact = () => {
     // https://morioh.com/p/ca75996654d1
     // https://www.youtube.com/watch?v=0B2raYYH2fE
 
-    axios.post("/sendEmail", {
+    axios.post("/portfolio-api", {
       data: {
         name,
         email,
