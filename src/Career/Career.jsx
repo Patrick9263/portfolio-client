@@ -17,31 +17,31 @@ const Career = () => {
           <li>
             <b>Year 1</b> - Ab Initio, Teradata/SQL, Jenkins/UCD, PowerShell.
             Used Ab Initio and Teradata as an ETL tool to consume and manipulate
-            data used for analytics further down the data stream in order to
-            make business decisions.
+            data used for analytics further down the data stream in order to make business decisions.
+            Also worked with Jenkins/UCD and PowerShell to automate SQL script deployment.
           </li>
           <li>
-            <b>Year 2</b> - React/JavaScript, C#, PowerShell. Worked on an
-            application used by agents to quote and issue insurance policies.
-            Helped with conversion from custom-made framework to React.
+            <b>Year 2</b> - React/JavaScript, C#, PowerShell.
+            Worked on an application used by agents to quote and issue insurance policies
+            made with a custom framework and React.
+            Also worked with C# for the backend as well as PowerShell to automate development tasks.
           </li>
         </MyCard>
         <MyCard
           title="UConn Information Technology Services"
           subTitle="Support Specialist Lead"
         >
-          <li>Re-imaged and set up computers for faculty/staff.</li>
           <li>
-            Created an electron app to graphically run a PowerShell script. The
-            script was used for automatically performing setup tasks for PCs
+            Re-imaged and set up computers as well as troubleshooted software/hardware-related
+            problems for faculty members to maintain and improve faculty productivity.
+          </li>
+          <li>
+            Created an Electron app to graphically run PowerShell scripts. This
+            was used for automatically performing setup tasks for PCs
             with a fresh install of Windows.
           </li>
           <li>
-            Troubleshooted software/hardware issues quickly and efficiently.
-          </li>
-          <li>
-            Hard drives were encrypted on these machines to protect important
-            data.
+            Hard drives were encrypted on these machines to protect important data.
           </li>
         </MyCard>
       </div>
